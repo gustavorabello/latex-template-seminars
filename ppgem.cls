@@ -1,33 +1,37 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %    METADATA:
 %	   file: ppgem.cls 
 %    date: 2015, April
 %    author: PEIXOTO DE OLIVEIRA, Gustavo 
-%	   e-mail: gustavo.olveira@uerj.br 
+%            MATOS, Leon
+%            ANJOS, Gustavo
+% 
+%	 e-mail: gustavo.anjos@uerj.br 
 %
 %    LICENSE:
-%    This program is free software: you can redistribute it and/or modify
-%    it under the terms of the GNU General Public License as published by
-%    the Free Software Foundation, either version 3 of the License, or
-%    (at your option) any later version.
-%    This program is distributed in the hope that it will be useful,
-%    but WITHOUT ANY WARRANTY; without even the implied warranty of
-%    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-%    GNU General Public License for more details.
-%    You should have received a copy of the GNU General Public License
-%    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%    This program is free software: you can redistribute it and/or
+%    modify it under the terms of the GNU General Public License as
+%    published by the Free Software Foundation, either version 3 of the
+%    License, or (at your option) any later version. This program is
+%    distributed in the hope that it will be useful, but WITHOUT ANY
+%    WARRANTY; without even the implied warranty of MERCHANTABILITY or
+%    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public
+%    License for more details. You should have received a copy of the
+%    GNU General Public License along with this program.  If not, see
+%    <http://www.gnu.org/licenses/>.
 %    
 %    DESCRIPTION
-%    This class file was intened to comply with formatting and publication specs for 
-%    scientific sessions (e.g. seminars, round tables and internal meetings) 
-%	   managed by the Laboratory of Environmental Studies in Water Reservoirs as part of 
-%    the Graduate Program in Mech. Eng. at State University of Rio de Janeiro (PPG-EM/UERJ).
-%    (http://www.gesar.uerj.br)
-%    This file is currently maintained by Gustavo Peixoto de Oliveira.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    This class file was intened to comply with formatting and
+%    publication specs for scientific sessions (e.g. seminars, round
+%    tables and internal meetings) managed by the Laboratory of
+%    Environmental Studies in Water Reservoirs as part of the Graduate
+%    Program in Mech. Eng. at State University of Rio de Janeiro
+%    (PPG-EM/UERJ). (http://www.gesar.uerj.br) This file is currently
+%    maintained by Prof. Gustavo Anjos and Leon Matos.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e} 													 	
 
-\ProvidesClass{ppgem}[2015/04/18 PPG-EM UERJ paper class]  
+\ProvidesClass{ppgem}[2016/01/01 PPG-EM UERJ paper class]  
 
 % Prevented options
 \DeclareOption{10pt}{\OptionNotUsed} 
@@ -52,41 +56,41 @@
 
 % process options
 \ProcessOptions\relax
-\LoadClass[a4paper]{article}									% loads based on article class
+\LoadClass[a4paper]{article}			    % loads based on article class
 
 % required packages and settings
-\RequirePackage[T1]{fontenc}   								% allows accented characters
+\RequirePackage[T1]{fontenc}   			    % allows accented characters
 \RequirePackage{lmodern}
 \RequirePackage[utf8]{inputenc} 
-\RequirePackage{calc}											% allows arithmetic among Latex expressions
-\RequirePackage{lipsum}										% inserts Latin text sample
-\RequirePackage{graphicx}										% includes figures
-\RequirePackage[main=english,brazil]{babel}   			% English as main language; Portuguese as the second
-\RequirePackage{epsf,epsfig} 									% insert '.eps', ' .ps' postscript figures
-\RequirePackage{setspace} 									% specify line spacing for sections and paragraphs through built-in commands 
-\RequirePackage[skip=2pt,hang]{caption} 			    % include caption
-\RequirePackage{subfig} 										% use subfigure environment
-\RequirePackage{nonfloat} 										% centralises tables and figs under nonfloat option [h] "here" 
-\RequirePackage{amsfonts,amsmath,amssymb,bm} 	% use a plethora of mathematical AMS fonts
-\RequirePackage{semtrans} 									% supports semitic languages
-\RequirePackage{cjhebrew} 									% allows hebrew characters
-\RequirePackage{upgreek}  									% upright style for Greek fonts 
-\RequirePackage{blkarray} 										% labeled rows/columns in matrices
-\RequirePackage[left]{lineno} 									% line numbering
-\RequirePackage[svgnames]{xcolor} 						% 'svgnames'; color list: http://www.latextemplates.com/svgnames-colors
-\RequirePackage{titlesec}	 									% provides additional features for titles
-\RequirePackage[margin=2cm]{geometry}				% page layout
-\RequirePackage[numbers]{natbib}							% bibliography
-\RequirePackage{nomencl}										% nomenclature
-\RequirePackage{ifthen}											% conditional
-\RequirePackage[noblocks]{authblk} 						% author, affiliation 
-\RequirePackage{multicol} 										% use of multiple columns
-\RequirePackage{fancyhdr}										% page layout headers
-\RequirePackage{tikz}											% duiagrams
-\usetikzlibrary{shapes,shadows,arrows}					% shapes
-\RequirePackage{indentfirst}  									% indents paragraph first line
+\RequirePackage{calc}						% allows arithmetic among Latex expressions
+\RequirePackage{lipsum}						% inserts Latin text sample
+\RequirePackage{graphicx}					% includes figures
+\RequirePackage[main=english,brazil]{babel} % English as main language; Portuguese as the second
+\RequirePackage{epsf,epsfig} 				% insert '.eps', ' .ps' postscript figures
+\RequirePackage{setspace} 					% specify line spacing for sections and paragraphs through built-in commands 
+\RequirePackage[skip=2pt,hang]{caption} 	% include caption
+\RequirePackage{subfig} 					% use subfigure environment
+\RequirePackage{nonfloat} 					% centralises tables and figs under nonfloat option [h] "here" 
+\RequirePackage{amsfonts,amsmath,amssymb,bm}% use a plethora of mathematical AMS fonts
+\RequirePackage{semtrans} 					% supports semitic languages
+\RequirePackage{cjhebrew} 					% allows hebrew characters
+\RequirePackage{upgreek}  					% upright style for Greek fonts 
+\RequirePackage{blkarray} 					% labeled rows/columns in matrices
+\RequirePackage[left]{lineno} 				% line numbering
+\RequirePackage[svgnames]{xcolor} 			% 'svgnames'; color list: http://www.latextemplates.com/svgnames-colors
+\RequirePackage{titlesec}	 				% provides additional features for titles
+\RequirePackage[margin=2cm]{geometry}		% page layout
+\RequirePackage[numbers]{natbib}			% bibliography
+\RequirePackage{nomencl}					% nomenclature
+\RequirePackage{ifthen}						% conditional
+\RequirePackage[noblocks]{authblk} 			% author, affiliation 
+\RequirePackage{multicol} 					% use of multiple columns
+\RequirePackage{fancyhdr}					% page layout headers
+\RequirePackage{tikz}						% duiagrams
+\usetikzlibrary{shapes,shadows,arrows}		% shapes
+\RequirePackage{indentfirst}  				% indents paragraph first line
 % LOAD 'microtype' PACKAGE LAST!
-\RequirePackage{microtype} 									% text kerning (ajuste de espaço de caracter)
+\RequirePackage{microtype} 	                % text kerning (ajuste de espaço de caracter)
 
 % paragraph
 \setlength{\parindent}{0pt} % changes indent length
@@ -129,12 +133,16 @@
 \begin{center}
 \large{ \color{NavyBlue} \textbf{ \MakeUppercase{ \@Title } } }   
 \end{center}
-%% author
+
+
+%% AUTHOR / ADVISON AREA
+
 \begin{minipage}{0.7\linewidth}
 \ifthenelse{ \equal{\@InstB}{} }{	 % checks if institutionB is empty
 \begin{tabular}{rl}
 \textbf{Author:} & \@AuthorName$^{1}$ \qquad  \href{mailto:\@CorrEmail}{ \textit{ \@CorrEmail} } \\
-%\textbf{Advisor(s):} & \@AdvisorName$^{1}$ \\
+%%% 
+\textbf{Advisor(s):} & \@AdvisorName$^{1}$ \\
  & \quad { \scriptsize $^{1}$ \@InstA } \\
 \end{tabular}
 }
